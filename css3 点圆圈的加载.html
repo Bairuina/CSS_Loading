@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+    <style type="text/css">
+        div {
+            margin: 100px auto;
+            width: 2px;
+            height: 2px;
+            border-radius: 1px;
+            /*50% 因为宽高为2px */
+            /* box-shadow: h-shadow v-shadow blur spread color inset;
+            h-shadow	必需。水平阴影的位置。允许负值。	
+            v-shadow	必需。垂直阴影的位置。允许负值。	
+            blur	可选。模糊距离。	
+            spread	可选。阴影的尺寸。	
+            color	可选。阴影的颜色。请参阅 CSS 颜色值。	
+            inset	可选。将外部阴影 (outset) 改为内部阴影。	 */
+            box-shadow: 0 -8px 0 2px black, /*上*/
+            0 8px 0 1px #333, /*下*/
+            -8px 0 0 1px #333, /*左*/
+            8px 0 0 1px #333, /*右*/
+            -6px -6px 0 1px #333, /*左上*/
+            6px -6px 0 1px #333, /*右上*/
+            -6px 6px 0 1px #333, /*左下*/
+            6px 6px 0 1px #333/*右下*/
+            ;
+            animation: loading 2s linear 0s infinite;
+            /* 兼容性 */
+            /* -webkit-animation: loading 2s linear 0s infinite;
+            -o-animation: loading 2s linear 0s infinite;
+            -moz-animation: loading 2s linear 0s infinite; */
+        }
+        
+        @keyframes loading {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        /* 兼容性 */
+        /* @-webkit-keyframes loading {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @-o-keyframes loading {
+            from {
+                -o-transform: rotate(0deg);
+            }
+            to {
+                -o-transform: rotate(360deg);
+            }
+        }
+        
+        @-moz-keyframes loading {
+            from {
+                -moz-transform: rotate(0deg);
+            }
+            to {
+                -moz-transform: rotate(360deg);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="loading"></div>
+</body>
+
+</html>
